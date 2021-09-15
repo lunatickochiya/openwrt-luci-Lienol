@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-06-10 03:41+0200\n"
-"PO-Revision-Date: 2021-09-04 07:10+0000\n"
+"PO-Revision-Date: 2021-09-09 14:30+0000\n"
 "Last-Translator: Wellington Terumi Uemura <wellingtonuemura@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "openwrt/luci/pt_BR/>\n"
@@ -530,7 +530,7 @@ msgstr "Administração"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:633
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1523
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:39
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:126
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:127
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:924
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:988
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:241
@@ -1794,7 +1794,7 @@ msgstr "Tema"
 msgid "Designated master"
 msgstr "Mestre designado"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:158
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:159
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:386
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:71
 msgid "Destination"
@@ -1881,8 +1881,8 @@ msgstr "Número de discagem"
 msgid "Directory"
 msgstr "Diretório"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:112
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:197
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:113
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:195
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:897
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:937
 msgid "Disable"
@@ -1925,7 +1925,7 @@ msgstr "Desabilitar esta rede"
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pppoe.js:57
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pptp.js:70
 msgid "Disabled"
-msgstr "Desabilitado"
+msgstr "Desativado"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1185
 msgid "Disassociate On Low Acknowledgement"
@@ -2683,7 +2683,7 @@ msgstr "Configurações do firewall"
 msgid "Firewall Status"
 msgstr "Condição do firewall"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:178
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:176
 msgid "Firewall mark"
 msgstr "Marca do firewall"
 
@@ -2868,7 +2868,7 @@ msgstr "Túnel GRETAP sobre IPv4"
 msgid "GRETAP tunnel over IPv6"
 msgstr "Túnel GRETAP sobre IPv6"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:74
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:75
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/30_network.js:44
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:188
 msgid "Gateway"
@@ -2886,7 +2886,7 @@ msgstr "O endereço do roteador padrão é inválido"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:251
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:477
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:38
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:125
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:126
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:240
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:108
 msgid "General Settings"
@@ -2950,11 +2950,11 @@ msgstr "Ir para a página de configuração pertinente"
 msgid "Grant access to DHCP configuration"
 msgstr "Conceder acesso à configuração do DHCP"
 
-#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status.json:115
+#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status-index.json:22
 msgid "Grant access to DHCP status display"
 msgstr "Conceda acesso à visualização da condição do DHCP"
 
-#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status.json:124
+#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status-index.json:31
 msgid "Grant access to DSL status display"
 msgstr "Conceder acesso à visualização da condição do DSL"
 
@@ -2986,7 +2986,7 @@ msgstr "Conceder acesso ao estado do firewall"
 msgid "Grant access to flash operations"
 msgstr "Conceder acesso às operações flash"
 
-#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status.json:96
+#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status-index.json:3
 msgid "Grant access to main status display"
 msgstr "Conceda acesso à exibição do status principal"
 
@@ -3038,7 +3038,7 @@ msgstr "Conceder acesso aos registros logs do sistema"
 msgid "Grant access to wireless channel status"
 msgstr "Conceda acesso à condição geral do canal sem fio"
 
-#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status.json:133
+#: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status-index.json:40
 msgid "Grant access to wireless status display"
 msgstr "Conceda acesso à visualização da condição do wireless"
 
@@ -3217,13 +3217,13 @@ msgstr "Vizinhos IPv4"
 msgid "IPv4 Routing"
 msgstr "Roteamento IPv4"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:119
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:120
 msgid "IPv4 Rules"
 msgstr "Regras IPv4"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/30_network.js:29
 msgid "IPv4 Upstream"
-msgstr "Enlace IPv4 Superior"
+msgstr "Conexão do enlace IPv4"
 
 #: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:178
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:38
@@ -3316,7 +3316,7 @@ msgstr "Configurações do IPv6 RA"
 msgid "IPv6 Routing"
 msgstr "Roteamento IPv6"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:119
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:120
 msgid "IPv6 Rules"
 msgstr "Regras IPv6"
 
@@ -3332,7 +3332,7 @@ msgstr ""
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/30_network.js:29
 msgid "IPv6 Upstream"
-msgstr "Enlace IPv6 Superior"
+msgstr "Conexão do enlace IPv6"
 
 #: modules/luci-base/htdocs/luci-static/resources/protocol/static.js:183
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:57
@@ -3551,7 +3551,7 @@ msgstr ""
 msgid "Incoming checksum"
 msgstr "Checksum da entrada"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:143
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:144
 msgid "Incoming interface"
 msgstr "Interface de entrada"
 
@@ -3781,7 +3781,7 @@ msgstr "Valor hexadecimal inválido"
 msgid "Invalid username and/or password! Please try again."
 msgstr "Usuário e/ou senha inválida! Por favor, tente novamente."
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:193
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:191
 msgid "Invert match"
 msgstr "Inverta a correspondência"
 
@@ -3815,7 +3815,7 @@ msgstr "Conectar à Rede: Busca por Rede Sem Fio"
 msgid "Joining Network: %q"
 msgstr "Juntando-se à rede %q"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:173
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:171
 msgid "Jump to rule"
 msgstr "Ir para a regra"
 
@@ -4303,7 +4303,7 @@ msgstr "Intervalo MII"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:580
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1418
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:85
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:86
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:53
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:92
 msgid "MTU"
@@ -4454,7 +4454,7 @@ msgstr "Método de monitoramento de enlace"
 msgid "Method to determine link status"
 msgstr "Método para determinar a condição do enlace"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:78
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:79
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:189
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:215
 msgid "Metric"
@@ -5034,7 +5034,7 @@ msgstr "Ligado"
 msgid "On-State Delay"
 msgstr "Atraso no estado de conexões"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:108
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:109
 msgid "On-link"
 msgstr "Rota em enlace"
 
@@ -5249,7 +5249,7 @@ msgstr "Saindo:"
 msgid "Outgoing checksum"
 msgstr "Checksum de Saída"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:154
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:155
 msgid "Outgoing interface"
 msgstr "Interface de saída"
 
@@ -5673,7 +5673,7 @@ msgstr "Preferir UMTS"
 msgid "Prefix Delegated"
 msgstr "Prefixo Delegado"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:188
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:186
 msgid "Prefix suppressor"
 msgstr "Supressor de prefixos"
 
@@ -5720,7 +5720,7 @@ msgid "Primary becomes active slave whenever it comes back up (always, 0)"
 msgstr "O primário se torna um escravo ativo sempre que retornar (sempre, 0)"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:508
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:128
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:129
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:197
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:223
 msgid "Priority"
@@ -6244,7 +6244,7 @@ msgstr ""
 msgid "Rule"
 msgstr "Regra"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:135
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:136
 msgid "Rule type"
 msgstr "Tipo da regra"
 
@@ -6627,8 +6627,8 @@ msgstr ""
 "firmware deve ser gravada manualmente. Por favor, consulte a wiki para "
 "instruções específicas da instalação deste dispositivo."
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:98
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:147
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:99
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:148
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:385
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:70
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:214
@@ -7171,8 +7171,8 @@ msgstr "Taxa de TX"
 msgid "TX queue length"
 msgstr "Comprimento da fila TX"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:90
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:165
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:91
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:166
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:18
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:190
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routes.js:216
@@ -7848,7 +7848,7 @@ msgstr "Potência de transmissão"
 msgid "Type"
 msgstr "Tipo"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:183
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:181
 msgid "Type of service"
 msgstr "Tipo do serviço"
 
@@ -8204,7 +8204,7 @@ msgstr "Use a tabela de roteamento"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1571
 msgid "Use system certificates"
-msgstr "Utilizar certificados do sistema"
+msgstr "Utilize os certificados do sistema"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1629
 msgid "Use system certificates for inner-tunnel"
@@ -8646,16 +8646,16 @@ msgid "ZRam Size"
 msgstr "Tamanho ZRam"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:440
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:151
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:162
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:152
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:163
 msgid "any"
 msgstr "qualquer"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1463
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1471
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1476
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:101
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:132
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:102
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:133
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1230
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:79
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pppoe.js:48
