@@ -54,6 +54,10 @@ body {
 	min-width: 100%;
 }
 
+abbr[title], acronym[title] {
+	text-decoration: dotted underline;
+}
+
 /*
  * scaffholding
  */
@@ -626,6 +630,10 @@ ul {
 
 ul > li {
 	list-style: disc;
+}
+
+p > a {
+	text-decoration: underline;
 }
 
 /*
