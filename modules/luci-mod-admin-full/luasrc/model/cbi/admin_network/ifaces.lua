@@ -246,6 +246,16 @@ for _, pr in ipairs(nw:get_protocols()) do
 	end
 end
 
+if nw.netifd_version > "2021-05-20" then
+	device = s:taboption("general", Value, "device", "<a style='color:red'>" .. translate("Device") .. "</a>")
+	m.uci:foreach("network", "device", function(e)
+		device:value(e.name)
+	end)
+	for _, iface in ipairs(nw:get_interfaces()) do
+		device:value(iface:name(), iface:get_i18n())
+	end
+end
+
 
 auto = s:taboption("advanced", Flag, "auto", translate("Bring up on boot"))
 auto.default = (net:proto() == "none") and auto.disabled or auto.enabled
@@ -259,11 +269,41 @@ force_link = s:taboption("advanced", Flag, "force_link",
 
 force_link.default = (net:proto() == "static") and force_link.enabled or force_link.disabled
 
-
+if nw.netifd_version < "2021-05-20" then
 if not net:is_virtual() then
 	br = s:taboption("physical", Flag, "type", translate("Bridge interfaces"), translate("creates a bridge over specified interface(s)"))
 	br.enabled = "bridge"
 	br.rmempty = true
+
+	if nw.netifd_version > "2021-05-20" then
+		br.cfgvalue = function(self, section)
+			local type = ""
+			m.uci:foreach("network", "device", function(e)
+				if e.name == m:get(section, "device") then
+					type = e.type
+				end
+			end)
+			return type
+		end
+		br.write = function(self, section, value)
+			local flag = false
+			m.uci:foreach("network", "device", function(e)
+				if e.name == m:get(section, "device") then
+					flag = true
+					m.uci:set("network", e.name, "type", value)
+				end
+			end)
+			if flag == false then
+				if value == "bridge" then
+					local id = m.uci:add("network", "device")
+					m.uci:set("network", id, "name", "br-" .. section)
+					m.uci:set("network", id, "type", "bridge")
+					m.uci:set("network", section, "device", "br-" .. section)
+				end
+			end
+			return
+		end
+	end
 	br:depends("proto", "static")
 	br:depends("proto", "dhcp")
 	br:depends("proto", "none")
@@ -350,6 +390,7 @@ if not net:is_virtual() then
 	ifname_multi.cfgvalue = ifname_single.cfgvalue
 	ifname_multi.write = ifname_single.write
 end
+end
 
 
 if has_firewall then
@@ -385,9 +426,14 @@ function p.remove() end
 function p.validate(self, value, section)
 	if value == net:proto() then
 		if not net:is_floating() and net:is_empty() then
-			local ifn = ((br and (br:formvalue(section) == "bridge"))
+			local ifn
+			if nw.netifd_version < "2021-05-20" then
+			ifn = ((br and (br:formvalue(section) == "bridge"))
 				and ifname_multi:formvalue(section)
 			     or ifname_single:formvalue(section))
+			else
+				ifn = device:formvalue(section)
+			end
 
 			for ifn in ut.imatch(ifn) do
 				return value
